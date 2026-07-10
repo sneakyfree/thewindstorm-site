@@ -25,7 +25,7 @@ Set in `wrangler.toml` (non-secret) + as a Pages **secret** (the key):
 |---|---|---|
 | `DB` (D1) | wrangler.toml | grantwhitmer-admin `c4d5aabe-…` |
 | `RESEND_AUDIENCE_ID` | wrangler.toml `[vars]` | `2f526951-…-b04a7e29ec42` |
-| `MAIL_FROM` | wrangler.toml `[vars]` | `The Windstorm <grant@grantwhitmer.com>` |
+| `MAIL_FROM` | wrangler.toml `[vars]` | `The Windstorm <eye@thewindstorm.ai>` |
 | `INQUIRY_TO` | wrangler.toml `[vars]` | `grant@windstorminstitute.org` |
 | `RESEND_API_KEY` | **Pages secret** (never in repo) | `re_HZKknWvq_…` (GrantWhitmerSiteV2, full-access) |
 

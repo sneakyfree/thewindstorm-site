@@ -15,4 +15,4 @@ database_id = "c4d5aabe-a97d-489e-a26e-93279794859a"
 # Same Resend audience as everywhere else = one newsletter list.
 RESEND_AUDIENCE_ID = "2f526951-242f-4c94-841d-b04a7e29ec42"
 INQUIRY_TO = "grant@windstorminstitute.org"
-MAIL_FROM = "The Windstorm <grant@grantwhitmer.com>"
+MAIL_FROM = "The Windstorm <eye@thewindstorm.ai>"

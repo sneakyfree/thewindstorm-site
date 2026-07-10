@@ -14,7 +14,7 @@ function respond(request, ok, message, status) {
     });
   }
   // no-JS fallback: land on the thanks page (or bounce home on error)
-  const to = ok ? "/thanks?s=brief" : "/?error=subscribe#windstorm";
+  const to = ok ? "/thanks" : "/?error=subscribe#signup";
   return Response.redirect(new URL(to, request.url), 303);
 }
 
