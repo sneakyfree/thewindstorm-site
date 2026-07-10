@@ -1,0 +1,13 @@
+# Always revalidate document + code so deploys show up immediately.
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+/css/*
+  Cache-Control: public, max-age=0, must-revalidate
+/js/*
+  Cache-Control: public, max-age=0, must-revalidate
+/assets/*
+  Cache-Control: public, max-age=2592000
+/thanks.html
+  X-Robots-Tag: noindex
+/404.html
+  X-Robots-Tag: noindex

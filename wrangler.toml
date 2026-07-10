@@ -1,0 +1,18 @@
+# Cloudflare Pages config for thewindstorm.ai.
+# Bindings + non-secret vars live here; RESEND_API_KEY is a Pages SECRET (never committed).
+name = "thewindstorm"
+pages_build_output_dir = "."
+compatibility_date = "2024-11-01"
+
+# Shared community list — the SAME D1 that backs grantwhitmer.com's cockpit,
+# so signups here land in the one member registry.
+[[d1_databases]]
+binding = "DB"
+database_name = "grantwhitmer-admin"
+database_id = "c4d5aabe-a97d-489e-a26e-93279794859a"
+
+[vars]
+# Same Resend audience as everywhere else = one newsletter list.
+RESEND_AUDIENCE_ID = "2f526951-242f-4c94-841d-b04a7e29ec42"
+INQUIRY_TO = "grant@windstorminstitute.org"
+MAIL_FROM = "The Windstorm <grant@grantwhitmer.com>"
