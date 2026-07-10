@@ -110,7 +110,7 @@ export async function onRequestPost(context) {
           "<p style='margin:0 0 14px;'><b>Windy Word is yours, free.</b> It's the voice-to-text tool I built by voice — turn the thoughts in your head into clean text on a screen, in 99 languages. It runs entirely on your own machine: no cloud, no subscription, nothing ever leaves your device. The same tool I wrote this whole newsletter with.</p>",
           "<p style='margin:0;'><a href='https://windyword.ai' style='display:inline-block;background:#1a1a1a;color:#f4f1e8;text-decoration:none;padding:11px 22px;border-radius:999px;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;'>Download Windy Word — free →</a></p>",
           "</div>",
-          "<p>While you wait for the first issue, the site has the whole story: <a href='https://grantwhitmer.com'>grantwhitmer.com</a></p>",
+          "<p>While you wait for the first issue, the eye is open at <a href='https://thewindstorm.ai'>thewindstorm.ai</a> — past dispatches, the show, the whole storm.</p>",
           "<p>From the eye of the storm,<br>Grant Whitmer</p>",
           "</div>",
         ].join(""),

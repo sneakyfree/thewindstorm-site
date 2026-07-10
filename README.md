@@ -1,9 +1,20 @@
 # thewindstorm.ai
 
-Minimal one-page landing site for **The Windstorm** — Grant Whitmer's weekly newsletter on
-AI and human life. One job: capture email signups for the newsletter.
+**The Windstorm's home** — the master media brand: weekly newsletter + the show
+(YouTube @TheWindstormAI), sharing the ritual sign-on "Welcome to the Eye of the
+Windstorm." Static HTML/CSS/JS + Cloudflare Pages Functions. Public, no gate.
 
-Static HTML/CSS/JS + a single Cloudflare Pages Function. Public, no gate.
+- `/` hero-as-arrival (animated storm, eye badge, signup, Windy Word gift),
+  latest dispatch, thesis, gift, book shelf strip, ecosystem constellation.
+- `/archive` + `/archive/:slug` — THE canonical home of every published issue/essay
+  (moved here from grantwhitmer.com/windstorm 2026-07-10; that domain 301s here).
+  Post pages double as episode show-notes (YouTube embed + transcript, set from
+  the grantwhitmer.com/admin cockpit).
+- `/feed.xml` RSS · `/sitemap.xml` dynamic · `/api/latest` homepage card ·
+  `/join` → `/` (canonical printed-QR URL, repointable forever).
+- Palette from the eye badge: void purple-black, electric blue, lightning amber.
+- Persona rule: the site speaks as THE BRAND; Grant appears only as the
+  "conducted by" credit. No bio content here — that lives on grantwhitmer.com.
 
 ## The email list is shared — not a separate copy
 

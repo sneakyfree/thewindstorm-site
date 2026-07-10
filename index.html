@@ -3,74 +3,195 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="theme-color" content="#08090D" />
-<title>The Windstorm — a weekly dispatch from the eye of the storm</title>
-<meta name="description" content="One email a week from the eye of the storm: what actually happened as AI wove itself deeper into human life, what it means for your work, and one thing worth doing about it. Free. By Grant Whitmer." />
+<meta name="theme-color" content="#07070C" />
+<title>The Windstorm — Welcome to the Eye of the Windstorm</title>
+<meta name="description" content="The weekly dispatch and show from the calm center of the AI storm: what actually happened, what it means for your work and your life, and one thing worth doing about it. Free — and Windy Word comes with it." />
 <link rel="canonical" href="https://thewindstorm.ai/" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://thewindstorm.ai/" />
-<meta property="og:title" content="The Windstorm — a weekly dispatch from the eye of the storm" />
-<meta property="og:description" content="One email a week: what actually happened as AI wove itself deeper into human life, what it means for you, and one thing worth doing about it. Free." />
+<meta property="og:title" content="The Windstorm — Welcome to the Eye of the Windstorm" />
+<meta property="og:description" content="Once a week from the eye of the storm: what actually happened in AI, what it means for you, and one thing worth doing about it. Free, with a gift." />
 <meta property="og:image" content="https://thewindstorm.ai/assets/og.jpg" />
 <meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://thewindstorm.ai/assets/og.jpg" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2308090D'/%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='%23E4C578' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='9' fill='%23E4C578'/%3E%3C/svg%3E" />
+<link rel="icon" href="/assets/favicon.png" />
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+<link rel="alternate" type="application/rss+xml" title="The Windstorm" href="/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/css/style.css?v=20260710a" />
+<link rel="stylesheet" href="/css/style.css?v=20260711a" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"The Windstorm","url":"https://thewindstorm.ai/","description":"A weekly newsletter on AI and human life, by Grant Whitmer.","author":{"@type":"Person","name":"Grant Whitmer","url":"https://grantwhitmer.com"}}
+{"@context":"https://schema.org","@type":"WebSite","name":"The Windstorm","url":"https://thewindstorm.ai/","description":"The weekly dispatch and show from the eye of the AI storm.","author":{"@type":"Person","name":"Grant Whitmer","url":"https://grantwhitmer.com"}}
 </script>
 </head>
 <body>
 <noscript><style>.js-only{display:none!important}.reveal{opacity:1!important;transform:none!important}</style></noscript>
 
-<main class="stage">
-  <div class="eye" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/"><img src="/assets/eye-360.webp" alt="" width="34" height="34" /><span>The <b>Windstorm</b></span></a>
+    <nav class="nav-links">
+      <a href="/archive">Archive</a>
+      <a href="https://www.youtube.com/@TheWindstormAI" target="_blank" rel="noopener">YouTube</a>
+      <a href="#gift">The Gift</a>
+      <a href="#join" class="nav-cta">Join free</a>
+    </nav>
+  </div>
+</header>
 
-  <section class="hero wrap">
-    <p class="eyebrow reveal">The Windstorm <span class="dot">·</span> weekly</p>
+<main>
 
-    <h1 class="reveal">The storm isn't coming.<br>You're already in it.</h1>
+<!-- ============ HERO: THE ARRIVAL ============ -->
+<section class="hero" id="top">
+  <div class="storm" aria-hidden="true">
+    <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+    <div class="bolt b1"></div><div class="bolt b2"></div>
+  </div>
+  <div class="wrap hero-inner">
+    <img class="hero-eye reveal" src="/assets/eye.webp" alt="The eye of the Windstorm — a calm eye at the center of a storm of clouds, lightning, and code" width="1000" height="1000" fetchpriority="high" />
+    <p class="eyebrow reveal">The Windstorm <span class="dot">·</span> the weekly dispatch &amp; the show</p>
+    <h1 class="reveal">Welcome to the<br/>Eye&nbsp;of&nbsp;the&nbsp;Windstorm.</h1>
+    <p class="lede reveal">The storm isn't coming — you're already in it. AI is weaving itself into your work, your company, the ground under all of it, a little deeper every week. This is the calm center: <strong>once a week</strong>, what actually happened, what it means for you, and one thing worth doing about it.</p>
 
-    <p class="lede reveal">
-      AI is weaving itself into human life a little deeper every week — your work, your company,
-      the ground under all of it. <strong>The Windstorm</strong> is one short email a week from the
-      eye of the storm: what actually happened, what it means for you, and one thing worth doing about it.
-    </p>
-
-    <form class="signup reveal" id="signup" method="POST" action="/api/subscribe" novalidate>
+    <form class="signup reveal" id="join" method="POST" action="/api/subscribe" novalidate>
       <input type="hidden" name="source" value="thewindstorm-ai" />
-      <!-- honeypot: hidden from humans, catnip for bots -->
       <div class="hp" aria-hidden="true"><label>Company website<input type="text" name="company_website" tabindex="-1" autocomplete="off" /></label></div>
       <div class="signup-row">
         <input type="email" name="email" id="email" placeholder="you@example.com" required autocomplete="email" aria-label="Your email address" />
-        <button type="submit" id="submitBtn">Join free</button>
+        <button type="submit" id="submitBtn">Step into the eye →</button>
       </div>
       <p class="form-note" id="formNote">One email a week. Free. Unsubscribe in one click, no hard feelings.</p>
     </form>
 
-    <p class="perk reveal">
-      <span class="perk-tag">A gift for joining</span>
-      Get <strong>Windy Word</strong> free — the private, on-device voice-to-text tool Grant built by voice,
-      in 99 languages. The same tool this newsletter is written with.
-    </p>
+    <p class="perk reveal"><span class="perk-tag">A gift for joining</span> <strong>Windy Word</strong> is yours free — private voice-to-text that runs entirely on your own machine. <a href="#gift">The full story ↓</a></p>
 
     <div class="secondary reveal">
       <a class="yt" href="https://www.youtube.com/@TheWindstormAI" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.5 15.5v-7l6.3 3.5-6.3 3.5z"/></svg>
-        Watch on YouTube
+        Watch the show on YouTube
       </a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="foot wrap">
-    <span>© <span id="year">2026</span> The Windstorm · by <a href="https://grantwhitmer.com" target="_blank" rel="noopener">Grant Whitmer</a></span>
-    <span class="quiet">Spoken into existence. Built by voice.</span>
-  </footer>
+<!-- ============ THIS WEEK IN THE STORM ============ -->
+<section class="section" id="latest">
+  <div class="wrap">
+    <p class="eyebrow reveal">This week in the storm</p>
+    <div id="latestCard" class="latest-card reveal">
+      <p class="empty-note">The first dispatch is forming. <a href="#join">Join now</a> and it lands in your inbox the moment it breaks.</p>
+    </div>
+    <p class="reveal" style="margin-top:18px;"><a class="quiet-link" href="/archive">Browse every dispatch →</a></p>
+  </div>
+</section>
+
+<!-- ============ THE THESIS ============ -->
+<section class="section section-line" id="what">
+  <div class="wrap thesis-grid">
+    <div class="reveal">
+      <p class="eyebrow">What this is</p>
+      <h2>Everyone else is shouting<br/>from inside the chaos.</h2>
+    </div>
+    <div class="thesis-copy reveal">
+      <p>Half the world is screaming that AI will save everything; the other half, that it will end everything. Both are shouting from inside the storm wall, where the wind is loudest and nothing can be seen clearly.</p>
+      <p>A windstorm has one place where the air is still: the eye. That's where this is written. Every week The Windstorm takes what actually happened — not the hype, not the doom, the <em>signal</em> — and explains what it means for the people whose work and lives are being rearranged by it. Plainly. Calmly. With one concrete thing to do about it.</p>
+      <p>Read it as a five-minute letter, or watch it as the show. Same storm, same eye — your choice of window.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE GIFT ============ -->
+<section class="section" id="gift">
+  <div class="wrap gift-grid">
+    <div class="gift-panel reveal">
+      <p class="perk-tag">The gift</p>
+      <h2>Join free. Windy Word is yours.</h2>
+      <p>Windy Word turns the thoughts in your head into clean text on a screen — in 99 languages — and it runs <strong>entirely on your own machine</strong>. No cloud, no subscription, nothing ever leaves your device. It's the tool this whole operation is built with, spoken into existence one sentence at a time.</p>
+      <p class="quiet">Join the list, and the welcome note walks you to your free download at windyword.ai. That's the whole deal — no catch, no card.</p>
+      <div class="gift-ctas">
+        <a class="btn btn-primary" href="#join">Join &amp; claim it free →</a>
+        <a class="btn btn-ghost" href="https://windyword.ai" target="_blank" rel="noopener">See Windy Word ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE SHELF ============ -->
+<section class="section section-line" id="books">
+  <div class="wrap">
+    <p class="eyebrow reveal">Books from the storm</p>
+    <p class="lede-sm reveal">The long-form thinking behind the weekly dispatch — published by Windstorm Institute.</p>
+    <div class="shelf reveal">
+      <a class="shelf-book" href="https://www.amazon.com/dp/B0GX32TRTY" target="_blank" rel="noopener">
+        <img src="/assets/book-pattern.webp" alt="The Pattern Upstream of Everything — book cover" loading="lazy" />
+        <span>The Pattern Upstream of Everything</span>
+      </a>
+      <a class="shelf-book" href="https://www.amazon.com/dp/B0H6QFPSPT" target="_blank" rel="noopener">
+        <img src="/assets/book-vibecoder.webp" alt="God Is a Vibe Coder — book cover" loading="lazy" />
+        <span>God Is a Vibe Coder</span>
+      </a>
+      <a class="shelf-book" href="https://www.amazon.com/dp/B0H4DXDQCH" target="_blank" rel="noopener">
+        <img src="/assets/book-purplehand.webp" alt="Voice of the Visionary Gods, Book One: The Purple Hand — book cover" loading="lazy" />
+        <span>The Purple Hand</span>
+      </a>
+      <a class="shelf-book" href="https://www.amazon.com/dp/B0H6R96T7T" target="_blank" rel="noopener">
+        <img src="/assets/book-coldboot.webp" alt="Cold Boot — book cover" loading="lazy" />
+        <span>Cold Boot</span>
+      </a>
+    </div>
+    <p class="reveal" style="margin-top:20px;"><a class="quiet-link" href="https://windstorminstitute.org" target="_blank" rel="noopener">Browse the full catalog at Windstorm Institute ↗</a></p>
+  </div>
+</section>
+
+<!-- ============ THE SYSTEM ============ -->
+<section class="section" id="system">
+  <div class="wrap">
+    <p class="eyebrow reveal">The Windstorm system</p>
+    <p class="lede-sm reveal">The storm has moving parts. Each one stands on its own — all of them turn together.</p>
+    <div class="constellation reveal">
+      <a class="node" href="https://windstorminstitute.org" target="_blank" rel="noopener">
+        <span class="n-name">Windstorm Institute</span>
+        <span class="n-desc">The research arm — published papers on the limits of intelligence, and the imprint on every book.</span>
+      </a>
+      <a class="node" href="https://windstormlabs.com" target="_blank" rel="noopener">
+        <span class="n-name">Windstorm Labs</span>
+        <span class="n-desc">The engineering arm — where the ideas become working software.</span>
+      </a>
+      <a class="node" href="https://windyword.ai" target="_blank" rel="noopener">
+        <span class="n-name">Windy Word</span>
+        <span class="n-desc">The flagship tool — voice-to-text on local models, free for members.</span>
+      </a>
+      <a class="node" href="https://grantwhitmer.com" target="_blank" rel="noopener">
+        <span class="n-name">The Conductor</span>
+        <span class="n-desc">Coaching, speaking, and boot camps — how the method gets taught in person.</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 </main>
 
-<script src="/js/main.js?v=20260710a"></script>
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <div class="foot-brand">
+      <img src="/assets/eye-360.webp" alt="" width="40" height="40" />
+      <div>
+        <span>© <span id="year">2026</span> The Windstorm · conducted by <a href="https://grantwhitmer.com" target="_blank" rel="noopener">Grant Whitmer</a></span><br/>
+        <span class="quiet">Spoken into existence. Built by voice.</span>
+      </div>
+    </div>
+    <div class="foot-links">
+      <a href="/archive">Archive</a>
+      <a href="/feed.xml">RSS</a>
+      <a href="https://www.youtube.com/@TheWindstormAI" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://x.com/TheWindstorm" target="_blank" rel="noopener">X</a>
+      <a href="https://windyword.ai" target="_blank" rel="noopener">Windy Word</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js?v=20260711a"></script>
 </body>
 </html>
