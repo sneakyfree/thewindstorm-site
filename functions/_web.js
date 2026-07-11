@@ -33,7 +33,7 @@ export function shell({ title, description, path, body, jsonld }) {
 <link rel="alternate" type="application/rss+xml" title="The Windstorm" href="/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/css/style.css?v=20260711a" />
+<link rel="stylesheet" href="/css/style.css?v=20260711b" />
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ""}
 </head>
 <body>
