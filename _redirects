@@ -1,2 +1,2 @@
-# canonical join URL for printed QR codes — 302 (temporary) so it stays repointable forever
-/join / 302
+# /join is a real, permanent page (join.html) — served directly, no redirect.
+# (Kept intentionally minimal; add redirects here as needed.)
