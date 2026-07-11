@@ -1,2 +1,2 @@
-# canonical join URL for printed QR codes — repointable forever
-/join / 301
+# canonical join URL for printed QR codes — 302 (temporary) so it stays repointable forever
+/join / 302
