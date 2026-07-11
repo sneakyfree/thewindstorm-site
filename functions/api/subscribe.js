@@ -98,7 +98,6 @@ export async function onRequestPost(context) {
       body: JSON.stringify({
         from: env.MAIL_FROM,
         to: [email],
-        reply_to: env.INQUIRY_TO,
         subject: "Welcome to The Windstorm",
         html: [
           "<div style='font-family:Georgia,serif;font-size:17px;line-height:1.6;color:#1a1a1a;max-width:560px;margin:0 auto;padding:8px 4px;'>",
