@@ -55,7 +55,7 @@
     <p class="lede reveal">However you got here — the back of a book, a scanned code, a link from a friend — welcome. You're one step from the calm center of the storm: <strong>one email a week</strong> on what actually happened in AI, what it means for your work and your life, and one concrete thing worth doing about it. Free. And <strong>Windy Word comes with it.</strong></p>
 
     <form class="signup reveal" id="join" method="POST" action="/api/subscribe" novalidate>
-      <input type="hidden" name="source" value="thewindstorm-join" />
+      <input type="hidden" name="source" id="srcField" value="thewindstorm-join" />
       <div class="hp" aria-hidden="true"><label>Company website<input type="text" name="company_website" tabindex="-1" autocomplete="off" /></label></div>
       <div class="signup-row">
         <input type="email" name="email" id="email" placeholder="you@example.com" required autocomplete="email" aria-label="Your email address" />
@@ -69,7 +69,7 @@
     <div class="secondary reveal">
       <a class="yt" href="https://www.youtube.com/@TheWindstormAI" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.5 15.5v-7l6.3 3.5-6.3 3.5z"/></svg>
-        Prefer to watch? The show is <em>The Eye of the Windstorm</em>
+        Prefer to watch? The show opens the same way: <em>"Welcome to the Eye of the Windstorm."</em>
       </a>
     </div>
   </div>
@@ -85,7 +85,7 @@
         <span class="n-desc">A five-minute letter from the eye of the storm — the signal, not the hype or the doom, and one thing worth doing about it.</span>
       </div>
       <div class="node">
-        <span class="n-name">The Eye of the Windstorm</span>
+        <span class="n-name">The Windstorm — the show</span>
         <span class="n-desc">Rather listen than read? The same week, told as the show, over on YouTube. Same storm, your choice of window.</span>
       </div>
       <div class="node">
@@ -118,6 +118,13 @@
   </div>
 </footer>
 
+<script>
+// per-book attribution: /join?b=pattern → source "book-pattern"; bare /join → "thewindstorm-join"
+(function () {
+  var b = new URLSearchParams(location.search).get("b");
+  if (b) document.getElementById("srcField").value = ("book-" + b).replace(/[^a-z0-9-]/gi, "").slice(0, 40);
+})();
+</script>
 <script src="/js/main.js?v=20260711a"></script>
 </body>
 </html>
