@@ -61,3 +61,14 @@ The `.github/workflows/deploy.yml` is in place and will auto-deploy once GitHub 
 ## YouTube
 
 Channel link on the page → https://www.youtube.com/@TheWindstormAI
+
+## The printed-QR doctrine (/join)
+
+Every QR printed in a book points to `https://thewindstorm.ai/join` — a REAL
+static page (join/index.html), not a redirect, so it cannot 404 while the site
+deploys and no redirect ever gets cached into readers' browsers. Optional
+per-book attribution: print `/join?b=pattern` etc. — the page stamps the
+signup `source` as `book-<slug>` (bare /join → `join-qr`). Never move or
+delete join/index.html; repoint the FUTURE by editing the page, not the URL.
+Domain: thewindstorm.ai @ Cloudflare Registrar, paid through 2028-02-24 —
+keep auto-renew + payment method alive; that is the only way this link dies.

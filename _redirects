@@ -1,2 +1,2 @@
-# /join is a real, permanent page (join.html) — served directly, no redirect.
-# (Kept intentionally minimal; add redirects here as needed.)
+# /join is a REAL PAGE (join/index.html) — the canonical printed-QR destination.
+# It can never 404 while the site deploys, and its content/attribution can change forever.
